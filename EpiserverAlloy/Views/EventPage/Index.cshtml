@@ -1,0 +1,56 @@
+@using EpiserverAlloy
+@model PageViewModel<EventPage>
+
+@{ Layout = "~/Views/Shared/Layouts/_LeftNavigation.cshtml"; }
+
+<h1 @Html.EditAttributes(x => x.CurrentPage.PageName)>@Model.CurrentPage.PageName</h1>
+<p class="introduction" @Html.EditAttributes(x => x.CurrentPage.MetaDescription)>@Model.CurrentPage.MetaDescription</p>
+<div class="row">
+    <div class="span8 clearfix" @Html.EditAttributes(x => x.CurrentPage.MainBody)>
+        @Html.DisplayFor(m => m.CurrentPage.MainBody)
+    </div>
+</div>
+@Html.PropertyFor(x => x.CurrentPage.MainContentArea, new { CssClass = "row", Tag = Global.ContentAreaTags.TwoThirdsWidth })
+
+@section RelatedContent
+{
+    <div @Html.EditAttributes(x => x.CurrentPage.Summary)>
+        @Html.DisplayFor(m => m.CurrentPage.Summary)
+    </div>
+
+    <div @Html.EditAttributes(x => x.CurrentPage.Description)>
+        @Html.DisplayFor(m => m.CurrentPage.Description)
+    </div>
+
+    <div @Html.EditAttributes(x => x.CurrentPage.Title)>
+        @Html.DisplayFor(m => m.CurrentPage.Title)
+    </div>
+
+    <div @Html.EditAttributes(x => x.CurrentPage.Speaker)>
+        @Html.DisplayFor(m => m.CurrentPage.Speaker)
+    </div>
+
+    <div @Html.EditAttributes(x => x.CurrentPage.NoAttendees)>
+        @Html.DisplayFor(m => m.CurrentPage.NoAttendees)
+    </div>
+
+    <div @Html.EditAttributes(x => x.CurrentPage.StartDate)>
+        @Html.DisplayFor(m => m.CurrentPage.StartDate)
+    </div>
+
+    <div @Html.EditAttributes(x => x.CurrentPage.EndDate)>
+        @Html.DisplayFor(m => m.CurrentPage.EndDate)
+    </div>
+
+    <div @Html.EditAttributes(x => x.CurrentPage.EventImage)>
+        <img src="@Url.ContentUrl(Model.CurrentPage.EventImage)" />
+    </div>
+
+    <div @Html.EditAttributes(x => x.CurrentPage.AdditionalContent)>
+        @Html.DisplayFor(m => m.CurrentPage.AdditionalContent)
+    </div>
+
+    <div @Html.EditAttributes(x => x.CurrentPage.EventStatus)>
+        @Html.DisplayFor(m => m.CurrentPage.EventStatus)
+    </div>
+}

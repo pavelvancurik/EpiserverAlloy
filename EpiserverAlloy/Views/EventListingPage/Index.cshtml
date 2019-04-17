@@ -1,0 +1,16 @@
+@using EpiserverAlloy
+@model EventListingViewModel
+
+@{ Layout = "~/Views/Shared/Layouts/_LeftNavigation.cshtml"; }
+
+<h1 @Html.EditAttributes(x => x.CurrentPage.PageName)>@Model.CurrentPage.PageName</h1>
+<p class="introduction" @Html.EditAttributes(x => x.CurrentPage.MetaDescription)>@Model.CurrentPage.MetaDescription</p>
+
+@{
+    foreach (var item in Model.AllEvents)
+    {
+        <div>@item.StartDate - @item.EndDate</div>
+        <div><a href="@item.LinkURL">@item.Title</a></div>
+        <div>@item.Summary</div>
+    }
+}

@@ -1,0 +1,71 @@
+﻿2019-04-16 12:17:19,356 [1] ERROR EPiServer.Framework.Initialization.InitializationEngine: Initialize action failed for 'Initialize on class EPiServer.Initialization.Internal.ModelSyncInitialization, EPiServer, Version=11.9.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7'
+EPiServer.Core.TypeMismatchException: The backing type 'EpiserverAlloy.Models.Pages.EventStatus' attributed to the property 'EventStatus' on 'EventPage' does not inherit PropertyData.
+   at EPiServer.DataAbstraction.RuntimeModel.Internal.ContentDataAttributeScanningAssigner.AssignValuesToPropertyDefinition(PropertyDefinitionModel propertyDefinitionModel, PropertyInfo property, ContentTypeModel parentModel)
+   at EPiServer.DataAbstraction.RuntimeModel.Internal.ContentTypeModelScanner.AssignValuesToProperties(ContentTypeModel modelType)
+   at EPiServer.DataAbstraction.RuntimeModel.Internal.ContentTypeModelScanner.AddModel(Type type)
+   at EPiServer.DataAbstraction.RuntimeModel.Internal.ContentTypeModelScanner.RegisterModels()
+   at EPiServer.Initialization.Internal.ModelSyncInitialization.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.<>c__DisplayClass2_0.<Initialize>b__0()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()
+EPiServer.Core.TypeMismatchException: The backing type 'EpiserverAlloy.Models.Pages.EventStatus' attributed to the property 'EventStatus' on 'EventPage' does not inherit PropertyData.
+   at EPiServer.DataAbstraction.RuntimeModel.Internal.ContentDataAttributeScanningAssigner.AssignValuesToPropertyDefinition(PropertyDefinitionModel propertyDefinitionModel, PropertyInfo property, ContentTypeModel parentModel)
+   at EPiServer.DataAbstraction.RuntimeModel.Internal.ContentTypeModelScanner.AssignValuesToProperties(ContentTypeModel modelType)
+   at EPiServer.DataAbstraction.RuntimeModel.Internal.ContentTypeModelScanner.AddModel(Type type)
+   at EPiServer.DataAbstraction.RuntimeModel.Internal.ContentTypeModelScanner.RegisterModels()
+   at EPiServer.Initialization.Internal.ModelSyncInitialization.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.<>c__DisplayClass2_0.<Initialize>b__0()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()
+2019-04-16 12:17:37,803 [1] ERROR EPiServer.Framework.Initialization.InitializationEngine: Initialize action failed for 'Initialize on class EPiServer.Initialization.Internal.ModelSyncInitialization, EPiServer, Version=11.9.1.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7'
+EPiServer.Core.TypeMismatchException: The backing type 'EpiserverAlloy.Models.Pages.EventStatus' attributed to the property 'EventStatus' on 'EventPage' does not inherit PropertyData.
+   at EPiServer.DataAbstraction.RuntimeModel.Internal.ContentDataAttributeScanningAssigner.AssignValuesToPropertyDefinition(PropertyDefinitionModel propertyDefinitionModel, PropertyInfo property, ContentTypeModel parentModel)
+   at EPiServer.DataAbstraction.RuntimeModel.Internal.ContentTypeModelScanner.AssignValuesToProperties(ContentTypeModel modelType)
+   at EPiServer.DataAbstraction.RuntimeModel.Internal.ContentTypeModelScanner.AddModel(Type type)
+   at EPiServer.DataAbstraction.RuntimeModel.Internal.ContentTypeModelScanner.RegisterModels()
+   at EPiServer.Initialization.Internal.ModelSyncInitialization.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.<>c__DisplayClass2_0.<Initialize>b__0()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()
+EPiServer.Core.TypeMismatchException: The backing type 'EpiserverAlloy.Models.Pages.EventStatus' attributed to the property 'EventStatus' on 'EventPage' does not inherit PropertyData.
+   at EPiServer.DataAbstraction.RuntimeModel.Internal.ContentDataAttributeScanningAssigner.AssignValuesToPropertyDefinition(PropertyDefinitionModel propertyDefinitionModel, PropertyInfo property, ContentTypeModel parentModel)
+   at EPiServer.DataAbstraction.RuntimeModel.Internal.ContentTypeModelScanner.AssignValuesToProperties(ContentTypeModel modelType)
+   at EPiServer.DataAbstraction.RuntimeModel.Internal.ContentTypeModelScanner.AddModel(Type type)
+   at EPiServer.DataAbstraction.RuntimeModel.Internal.ContentTypeModelScanner.RegisterModels()
+   at EPiServer.Initialization.Internal.ModelSyncInitialization.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.<>c__DisplayClass2_0.<Initialize>b__0()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()
+2019-04-16 16:16:06,501 [12] ERROR EPiServer.Shell.UI.Messaging.Internal.DefaultWebSocketHandler: Web socket communication failure
+System.Net.WebSockets.WebSocketException (0x80070040): The specified network name is no longer available
+   at System.Web.WebSockets.WebSocketPipe.<>c__DisplayClass9_0.<ReadFragmentAsync>b__0(Int32 hrError, Int32 cbIO, Boolean fUtf8Encoded, Boolean fFinalFragment, Boolean fClose)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.WebSockets.AspNetWebSocket.<DoWork>d__45`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.WebSockets.AspNetWebSocket.<>c__DisplayClass36_0.<<ReceiveAsyncImpl>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at EPiServer.Shell.UI.Messaging.Internal.DefaultWebSocketHandler.<ProcessWebSocketRequestAsync>d__7.MoveNext()
+System.Net.WebSockets.WebSocketException (0x80070040): The specified network name is no longer available
+   at System.Web.WebSockets.WebSocketPipe.<>c__DisplayClass9_0.<ReadFragmentAsync>b__0(Int32 hrError, Int32 cbIO, Boolean fUtf8Encoded, Boolean fFinalFragment, Boolean fClose)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.WebSockets.AspNetWebSocket.<DoWork>d__45`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.WebSockets.AspNetWebSocket.<>c__DisplayClass36_0.<<ReceiveAsyncImpl>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at EPiServer.Shell.UI.Messaging.Internal.DefaultWebSocketHandler.<ProcessWebSocketRequestAsync>d__7.MoveNext()
