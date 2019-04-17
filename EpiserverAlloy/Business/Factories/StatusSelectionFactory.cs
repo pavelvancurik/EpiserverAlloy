@@ -19,7 +19,5 @@ namespace EpiserverAlloy.Business.Factories
 
             return statuses;
         }
-
-
     }
 }
